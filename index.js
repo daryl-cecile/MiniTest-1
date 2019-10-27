@@ -1,6 +1,5 @@
 
 function checkAnagram(wordA,wordB){
-
     wordA = wordA.replace(/ /g,'');
     wordB = wordB.replace(/ /g,'');
 
