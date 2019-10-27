@@ -12,7 +12,7 @@ function checkAnagram(wordA,wordB){
     for(let i = 0; i < wordB.length; i++){
 
         if ( wordALetters.indexOf(wordB[i]) > -1 ){
-            wordALetters.splice( wordA.indexOf(wordB[i]) , 1 );
+            wordALetters.splice( wordALetters.indexOf(wordB[i]) , 1 );
         }
         else return false
 
@@ -21,4 +21,4 @@ function checkAnagram(wordA,wordB){
 
 }
 
-console.log(checkAnagram("silent", "listen"))
+console.log(checkAnagram('eleven plus two','twelve plus one'))
