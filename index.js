@@ -20,5 +20,3 @@ function checkAnagram(wordA,wordB){
     return true;
 
 }
-
-console.log(checkAnagram('eleven plus two','twelve plus one'))
