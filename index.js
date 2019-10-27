@@ -6,15 +6,13 @@ function checkAnagram(wordA,wordB){
     if (wordA === wordB) return false;
     if (wordA.length !== wordB.length) return false;
     
-    let wordALetters = wordA.split('');
-    
     for(let i = 0; i < wordB.length; i++){
-
-        if ( wordA.indexOf(wordB[i]) > -1 ){
-            wordALetters.splice( wordA.indexOf(wordB[i]) , 1 );
+        if ( wordA.indexOf(wordB[i]) === -1 ){
+            return false;
         }
-        else return false;
-
     }
+    return true;
 
 }
+
+console.log(checkAnagram("silent", "listen"))
